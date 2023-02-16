@@ -5,21 +5,25 @@ function Introduction() {
       <div className="snap-start relative top-0 transition-all duration-700 ease-in-out">
         <div className="pt-[45vh] h-[90vh] font-ModerneSans text-white  m-auto w-fit text-6xl font-semibold">
             <div className="text-3xl">
-            <HoverText text="Portfolio"/>
-            <p className="inline text-base"> </p>
-            <HoverText text="by"/>
+            <HoverText text="Welcome!"/>
             </div>
 
             <HoverText text="Frederik"/>
-            <p className="inline text-base"> </p>
+            <p className="inline text-base select-none"> </p>
             <HoverText text="Farstad"/>
 
             <div className="ml-auto w-fit text-3xl">
-              <HoverText text="Welcome!"/>
+              <HoverText text="Software"/>
+              <p className="inline text-base select-none"> </p>
+              <HoverText text="Engineer"/>
+              <p className="inline text-base select-none"> </p>
+              <HoverText text="/"/>
+              <p className="inline text-base select-none"> </p>
+              <HoverText text="Student"/>
             </div>
         </div>
         <div className="flex items-center justify-center animate-bounce h-[8vh] text-white m-auto w-[8vh] rounded-full mb-[2vh] bg-neutral-800 bg-opacity-50">
-            <a className="relative -top-2 rotate-180 scale-[300%]">^</a>
+            <a className="relative -top-2 rotate-180 scale-[300%] select-none">^</a>
         </div>
       </div>
     );
