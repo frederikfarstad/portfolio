@@ -23,7 +23,7 @@ function Homepage() {
               </div>
             </div>
             <div className="absolute m-0 w-fit right-[1vw]">
-              <WebsiteCarbonBadge url="farstad.dev"/>
+              <WebsiteCarbonBadge dark={true} url="farstad.dev"/>
             </div>
         </div>
       </>

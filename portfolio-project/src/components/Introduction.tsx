@@ -23,11 +23,9 @@ function Introduction({ pageStartRef }: IntroductionProps) {
             <HoverText text="Farstad"/>
 
             <div className="ml-auto w-fit text-3xl">
-              <HoverText text="Software"/>
+              <HoverText text="Computer"/>
               <p className="inline text-base select-none"> </p>
-              <HoverText text="Engineer"/>
-              <p className="inline text-base select-none"> </p>
-              <HoverText text="/"/>
+              <HoverText text="Science"/>
               <p className="inline text-base select-none"> </p>
               <HoverText text="Student"/>
             </div>
