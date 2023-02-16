@@ -1,8 +1,18 @@
 import HoverText from "./HoverText";
+import React, { useRef } from 'react';
 
-function Introduction() {
+interface IntroductionProps {
+  pageStartRef: React.RefObject<HTMLDivElement>;
+}
+
+function Introduction({ pageStartRef }: IntroductionProps) {
+
+    const handleScroll = () => {
+      pageStartRef.current?.scrollIntoView({ behavior: 'smooth' });
+    };
+
     return (
-      <div className="snap-start relative top-0 transition-all duration-700 ease-in-out">
+      <div className="relative top-0 transition-all duration-700 ease-in-out">
         <div className="pt-[45vh] h-[90vh] font-ModerneSans text-white  m-auto w-fit text-6xl font-semibold">
             <div className="text-3xl">
             <HoverText text="Welcome!"/>
@@ -22,9 +32,11 @@ function Introduction() {
               <HoverText text="Student"/>
             </div>
         </div>
-        <div className="flex items-center justify-center animate-bounce h-[8vh] text-white m-auto w-[8vh] rounded-full mb-[2vh] bg-neutral-800 bg-opacity-50">
-            <a className="relative -top-2 rotate-180 scale-[300%] select-none">^</a>
-        </div>
+        <a onClick={handleScroll}>
+          <button className="flex items-center justify-center animate-bounce h-[8vh] text-white m-auto w-[8vh] rounded-full mb-[2vh] bg-neutral-800 bg-opacity-50">
+              <p className="relative -top-2 rotate-180 scale-[300%] select-none">^</p>
+          </button>
+        </a>
       </div>
     );
   }

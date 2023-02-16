@@ -17,3 +17,24 @@
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+.gradient-background {
+  background: linear-gradient(to bottom right, #020024, #25057d, #5c0979, #020024);
+  background-size: 200% 200%;
+  animation: gradient 20s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    degrees:0;
+    background-position: 0% 50%;
+  }
+  50% {
+    degrees:180;
+    background-position: 100% 50%;
+  }
+  100% {
+    degrees:360;
+    background-position: 0% 50%;
+  }
+}
