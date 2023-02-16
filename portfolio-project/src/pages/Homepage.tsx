@@ -1,5 +1,6 @@
 import Introduction from "../components/Introduction";
 import Textbox from "../components/Textbox";
+import { WebsiteCarbonBadge } from 'react-websitecarbon-badge';
 import React, { useRef } from 'react';
 
 function Homepage() {
@@ -20,6 +21,9 @@ function Homepage() {
               <div className="ml-[10vw]">
                   <Textbox />
               </div>
+            </div>
+            <div className="absolute m-0 w-fit right-[1vw]">
+              <WebsiteCarbonBadge url="farstad.dev"/>
             </div>
         </div>
       </>
