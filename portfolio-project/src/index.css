@@ -1,0 +1,37 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  color: rgba(255, 255, 255, 0.87);
+  background: radial-gradient(#5c0979, #25057d, #020024);
+  background-size: 1000vh 1000vh;
+  animation: gradient 40s ease infinite;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  overflow: hidden;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 20% 12.5%;
+  }
+  25% {
+    background-position: 75% 25%;
+  }
+  50% {
+    background-position: 80% 87.5%;
+  }
+  75% {
+    background-position: 25% 75%;
+  }
+  100% {
+    background-position: 20% 12.5%;
+  }
+
+  body {
+    margin: 0;
+  }
+}
