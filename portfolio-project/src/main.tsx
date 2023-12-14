@@ -5,7 +5,7 @@ import App from "./pages/App.tsx";
 import "./index.css";
 import Resume from "./pages/Resume.tsx";
 import Projects from "./pages/Projects.tsx";
-import FallbackPage from "./pages/FallBackPage.tsx";
+import FallbackPage from "./pages/FallbackPage.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
