@@ -16,13 +16,15 @@ const Navbar = () => {
         <a
           className={styles.logo}
           href="https://github.com/frederikfarstad"
-          target="_blank">
+          target="_blank"
+        >
           <img src={githubLogo} alt="Github logo" />
         </a>
         <a
           className={styles.logo}
           href="https://www.linkedin.com/in/frederik-andreas-brunvoll-farstad/"
-          target="_blank">
+          target="_blank"
+        >
           <img src={linkedinLogo} alt="Linkedin logo" />
         </a>
       </div>
