@@ -1,5 +1,11 @@
+@font-face {
+  font-family: "ModerneSans";
+  src: url("../public/ModerneSansFont.ttf");
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: ModerneSans, Inter, system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
 
   color: rgba(255, 255, 255, 0.87);
   background: radial-gradient(#5c0979, #25057d, #020024);
@@ -10,8 +16,16 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
 
-  overflow: hidden;
+html {
+  padding: 5rem 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
 }
 
 @keyframes gradient {
@@ -29,9 +43,5 @@
   }
   100% {
     background-position: 20% 12.5%;
-  }
-
-  body {
-    margin: 0;
   }
 }

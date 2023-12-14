@@ -1,13 +1,13 @@
-function App() {
+import Navbar from "../components/navbar/Navbar";
+
+function Projects() {
   return (
     <>
-      {/*
       <Navbar />
-      */}
 
       <h1>projects</h1>
     </>
   );
 }
 
-export default App;
+export default Projects;

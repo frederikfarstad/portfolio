@@ -17,5 +17,5 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="*" element={<FallbackPage />} />
       </Routes>
     </BrowserRouter>
-  </React.StrictMode>,
+  </React.StrictMode>
 );
