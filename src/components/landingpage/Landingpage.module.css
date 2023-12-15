@@ -1,0 +1,76 @@
+.landingSection {
+  height: calc(100vh - 5rem);
+  background: linear-gradient(#214ed3, #153084);
+  position: static;
+}
+
+.welcomeDiv {
+  position: relative;
+  width: fit-content;
+  height: 9rem;
+  top: calc((100vh / 2) - 5rem - (9rem / 2));
+  margin: 0 auto;
+}
+
+.welcome {
+  font-size: 2rem;
+  text-align: left;
+}
+
+.name {
+  font-size: 4rem;
+}
+
+.student {
+  font-size: 2rem;
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  .welcomeDiv {
+    height: 5rem;
+    top: calc((100vh / 2) - 5rem - (5rem / 2));
+  }
+
+  .welcome {
+    font-size: 1rem;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .student {
+    font-size: 1rem;
+  }
+}
+
+.scrollButton {
+  position: absolute;
+  left: calc(100vw / 2 - 35px);
+  bottom: 40px;
+  width: 60px;
+  height: 60px;
+  border-radius: 150px;
+  background: linear-gradient(145deg, #16338d, #132b77);
+  box-shadow:
+    6px 6px 12px #0e1f56,
+    -6px -6px 12px #1c41b2;
+  border: none;
+}
+
+.scrollButton:active {
+  border-radius: 50px;
+  background: #153084;
+  box-shadow:
+    inset 6px 6px 12px #122970,
+    inset -6px -6px 12px #183798;
+  opacity: 0.75;
+}
+
+.downArrow {
+  position: relative;
+  width: 50px;
+  height: 30px;
+  opacity: 0.75;
+}
