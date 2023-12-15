@@ -24,12 +24,12 @@ const styles = {
     height: "100%",
   },
   bmMenu: {
-    background: "#2c047c",
+    background: "#153084",
     padding: "2.5em 1.5em 0",
     fontSize: "1.15em",
   },
   bmMorphShape: {
-    fill: "#2c047c",
+    fill: "#153084",
   },
   bmItemList: {
     color: "#b8b7ad",
