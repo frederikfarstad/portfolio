@@ -1,5 +1,4 @@
 .aboutSection {
-  /* 100vh - height of seperator */
   height: calc(100vh - 100px);
   background: #153084;
   position: relative;
@@ -28,10 +27,9 @@ i {
   position: relative;
   width: 30rem;
   height: 17rem;
-  top: 25%;
+  top: 25vh;
   left: 10%;
   border-radius: 50px;
-
   background: #153084;
   box-shadow:
     inset 18px 18px 36px #122970,
@@ -40,7 +38,7 @@ i {
 
 .portrait {
   position: absolute;
-  top: 25%;
+  top: 25vh;
   right: 10vw;
   border-radius: 150px;
   width: 20rem;
@@ -70,6 +68,10 @@ i {
 }
 
 @media (max-width: 1300px) {
+  .aboutSection {
+    height: calc(100vh + 5rem);
+  }
+
   .about {
     width: 30rem;
     height: 17rem;
@@ -87,7 +89,7 @@ i {
 
 @media (max-width: 700px) {
   .aboutSection {
-    height: 100vh;
+    height: calc(100vh + 10rem);
   }
 
   .about {
