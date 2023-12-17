@@ -5,7 +5,7 @@ import Navbar from "../components/navbar/Navbar";
 import ClockwiseSeperator from "../components/seperators/ClockwiseSeperator";
 import CounterClockwiseSeperator from "../components/seperators/CounterClockwiseSeperator";
 import Technologies from "../components/technologies/Technologies";
-import Mail from "../components/mail/mail";
+import Mail from "../components/mail/Mail.tsx";
 
 function App() {
   const aboutRef = useRef<HTMLDivElement>(null);
