@@ -1,0 +1,6 @@
+.mailSection {
+  height: calc(100vh);
+  background: #4169e1;
+  position: relative;
+  margin: 0;
+}
