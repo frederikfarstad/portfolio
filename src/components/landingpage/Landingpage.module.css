@@ -45,6 +45,12 @@
   }
 }
 
+@media (max-height: 400px) {
+  .scrollButton {
+    display: none;
+  }
+}
+
 .scrollButton {
   position: absolute;
   left: calc(100vw / 2 - 35px);
@@ -57,20 +63,26 @@
     6px 6px 12px #0e1f56,
     -6px -6px 12px #1c41b2;
   border: none;
+  cursor: pointer;
+  transition: all 100ms ease-out;
+}
+
+.scrollButton:hover {
+  box-shadow:
+    12px 12px 15px #0e1f56,
+    -12px -12px 15px #1c41b2;
 }
 
 .scrollButton:active {
-  border-radius: 50px;
   background: #153084;
   box-shadow:
     inset 6px 6px 12px #122970,
     inset -6px -6px 12px #183798;
-  opacity: 0.75;
 }
 
 .downArrow {
   position: relative;
-  width: 50px;
+  width: 30px;
   height: 30px;
   opacity: 0.75;
 }
