@@ -1,8 +1,11 @@
 .aboutSection {
-  height: calc(100vh - 100px);
+  display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  padding-top: 5rem;
   background: #153084;
-  position: relative;
-  margin: 0;
 }
 
 .about h2 {
@@ -23,12 +26,10 @@ i {
 }
 
 .about {
+  margin: auto;
   padding: 1.5rem 5rem;
-  position: relative;
   width: 30rem;
   height: 17rem;
-  top: 25vh;
-  left: 10%;
   border-radius: 50px;
   background: #153084;
   box-shadow:
@@ -37,9 +38,7 @@ i {
 }
 
 .portrait {
-  position: absolute;
-  top: 25vh;
-  right: 10vw;
+  margin: auto;
   border-radius: 150px;
   width: 20rem;
   height: 20rem;
@@ -49,49 +48,7 @@ i {
     -6px -6px 12px #265af3;
 }
 
-@media (min-width: 1800px) {
-  .portrait {
-    right: 20%;
-  }
-  .about {
-    left: 20%;
-  }
-}
-
-@media (min-width: 1500px) and (max-width: 1800px) {
-  .portrait {
-    right: 15%;
-  }
-  .about {
-    left: 15%;
-  }
-}
-
-@media (max-width: 1300px) {
-  .aboutSection {
-    height: calc(100vh + 5rem);
-  }
-
-  .about {
-    width: 30rem;
-    height: 17rem;
-    top: calc(10vh + 15rem + 5rem);
-    left: calc(50vw - 15rem - 5rem);
-  }
-
-  .portrait {
-    width: 15rem;
-    height: 15rem;
-    right: calc(50vw - 7.5rem);
-    top: 10vh;
-  }
-}
-
 @media (max-width: 700px) {
-  .aboutSection {
-    height: calc(100vh + 10rem);
-  }
-
   .about {
     padding: 1.5rem 3rem;
     width: 15rem;
@@ -103,5 +60,10 @@ i {
   .about p {
     font-size: 1rem;
     line-height: 1.2rem;
+  }
+
+  .portrait {
+    width: 15rem;
+    height: 15rem;
   }
 }

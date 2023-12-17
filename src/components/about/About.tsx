@@ -18,7 +18,6 @@ const About = forwardRef<HTMLDivElement>((_, aboutRef) => {
           a passion for both front-end and back-end development.
         </p>
       </div>
-
       <img src="img/portrait.jpg" alt="Portrait" className={styles.portrait} />
     </section>
   );
