@@ -1,4 +1,5 @@
 .aboutSection {
+  min-height: fit-content;
   /* 100vh - height of seperator */
   height: calc(100vh - 100px);
   background: #153084;
