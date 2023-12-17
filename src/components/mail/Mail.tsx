@@ -1,4 +1,4 @@
-import styles from "./mail.module.css";
+import styles from "./Mail.module.css";
 
 const Mail = () => {
   return <section className={styles.mailSection}></section>;
