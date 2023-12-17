@@ -1,0 +1,82 @@
+.bmBurgerButton {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 1.5rem;
+}
+
+.bmBurgerBars {
+  background: #ffffff;
+}
+
+.bmBurgerBars:hover {
+  background: #a90000;
+}
+
+.bmCrossButton {
+  height: 2rem;
+  width: 2rem;
+}
+
+.bmCross {
+  background: #ffffff;
+}
+
+.bmMenuWrap {
+  top: 0;
+  position: fixed;
+  height: 100%;
+}
+
+.bmMenu {
+  background: #214ed3;
+  padding: 2.5em;
+  font-size: 1.15em;
+}
+
+.bmMorphShape {
+  fill: #214ed3;
+}
+
+.bmItemList {
+  color: #b8b7ad;
+  padding: 1.5rem;
+}
+
+.bmItem {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 1.5rem;
+  width: 9rem;
+  height: 3rem;
+  border-radius: 150px;
+  background: linear-gradient(145deg, #2353e2, #1e46be);
+  box-shadow:
+    6px 6px 12px #1c42b3,
+    -6px -6px 12px #265af3;
+  border: none;
+  cursor: pointer;
+  transition: all 100ms ease-out;
+}
+
+.bmItem:hover {
+  box-shadow:
+    12px 12px 15px #1c42b3,
+    -12px -12px 15px #265af3;
+}
+
+.bmItem:active {
+  border-radius: 50px;
+  background: #214ed3;
+  box-shadow:
+    inset 6px 6px 12px #1c42b3,
+    inset -6px -6px 12px #265af3;
+}
+
+.bmOverlay {
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
