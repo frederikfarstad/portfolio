@@ -3,9 +3,12 @@
   flex-flow: row wrap-reverse;
   justify-content: flex-start;
   align-items: center;
-  height: 100vh;
-  padding-top: 5rem;
+  min-height: 90vh;
+  height: fit-content;
   background: #153084;
+  row-gap: 5rem;
+  column-gap: 2rem;
+  padding: 5rem 2rem;
 }
 
 .about h2 {
