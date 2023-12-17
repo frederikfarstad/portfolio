@@ -1,20 +1,31 @@
 import styles from "./Navbar.module.css";
+import menuStyles from "./Menu.module.css";
 import { elastic as Menu } from "react-burger-menu";
-import MenuStyles from "./MenuStyles.ts";
 import githubLogo from "../../assets/github.svg";
 import linkedinLogo from "../../assets/linkedin.svg";
 
 const Navbar = () => {
   return (
     <section className={styles.navbarWrapper}>
-      <Menu styles={MenuStyles}>
+      <Menu
+        className={menuStyles.bmMenuWrap}
+        menuClassName={menuStyles.bmMenu}
+        burgerButtonClassName={menuStyles.bmBurgerButton}
+        burgerBarClassName={menuStyles.bmBurgerBars}
+        crossButtonClassName={menuStyles.bmCrossButton}
+        crossClassName={menuStyles.bmCross}
+        itemClassName={menuStyles.bmItem}
+        itemListClassName={menuStyles.bmItemList}
+        overlayClassName={menuStyles.bmOverlay}
+        morphShapeClassName={menuStyles.bmMorphShape}
+      >
         <a href="/">Home</a>
         <a href="/resume">Resume</a>
         <a href="/projects">Projects</a>
       </Menu>
       <div className={styles.socialsWrapper}>
         <a
-          className={styles.logo}
+          className={styles.button + " " + styles.logo}
           href="https://github.com/frederikfarstad"
           target="_blank"
         >

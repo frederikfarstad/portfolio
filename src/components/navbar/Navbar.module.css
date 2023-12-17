@@ -1,9 +1,9 @@
 .navbarWrapper {
   display: inline-block;
   width: 100%;
-  padding: 0;
+  padding: 1.5rem 0;
   position: fixed;
-  top: 1.5rem;
+  top: 0rem;
   z-index: 100;
 }
 
