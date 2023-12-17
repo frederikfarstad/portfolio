@@ -1,5 +1,4 @@
 .aboutSection {
-  min-height: fit-content;
   /* 100vh - height of seperator */
   height: calc(100vh - 100px);
   background: #153084;
@@ -87,6 +86,10 @@ i {
 }
 
 @media (max-width: 700px) {
+  .aboutSection {
+    height: 100vh;
+  }
+
   .about {
     padding: 1.5rem 3rem;
     width: 15rem;

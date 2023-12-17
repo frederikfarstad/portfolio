@@ -1,5 +1,4 @@
 .mailSection {
-  min-height: fit-content;
   height: calc(100vh);
   background: #4169e1;
   position: relative;

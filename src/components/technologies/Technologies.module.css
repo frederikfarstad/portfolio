@@ -1,6 +1,5 @@
 .technologiesSection {
   /* 100vh - height of seperator */
-  min-height: fit-content;
   height: calc(100vh - 100px);
   background: #1b3fab;
   position: relative;
