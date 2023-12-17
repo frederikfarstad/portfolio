@@ -1,6 +1,6 @@
 @font-face {
   font-family: "ModerneSans";
-  src: url("../public/ModerneSansFont.ttf");
+  src: url("/font/ModerneSansFont.ttf");
 }
 
 :root {
