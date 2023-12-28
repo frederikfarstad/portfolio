@@ -1,0 +1,12 @@
+.container {
+  margin: 2rem auto 0 auto;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background: #1b3fab;
+  box-shadow:
+    5px 5px 10px #173691,
+    -5px -5px 10px #1f48c5;
+}

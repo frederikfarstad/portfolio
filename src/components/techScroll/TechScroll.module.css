@@ -1,0 +1,70 @@
+.container {
+  margin: 2rem;
+}
+
+.container .title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.techScrollSection {
+  border-radius: 15px;
+  box-shadow:
+    inset 5px 5px 10px #173691,
+    inset -5px -5px 10px #1f48c5;
+  width: 25svw;
+  min-width: 20rem;
+  height: 50svh;
+  overflow: hidden;
+  position: relative;
+}
+
+.techWrapper {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  animation: slide linear infinite;
+  overflow: hidden;
+}
+
+.techWrapper:hover {
+  animation-play-state: paused;
+}
+
+.techScrollSection::before {
+  position: absolute;
+  top: 0;
+
+  background: linear-gradient(to top, rgba(255, 255, 255, 0), #173691);
+  /* 80% of a techScrollSection, slightly larger width than TechScrollItem */
+  width: max(calc((25svw / 100) * 80), calc((20rem / 100) * 80));
+  /* 10% of a techScrollSection */
+  left: max(calc((25svw / 100) * 10), calc((20rem / 100) * 10));
+  height: 5px;
+  content: "";
+  z-index: 2;
+}
+.techScrollSection::after {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #1f48c5);
+  /* 80% of a techScrollSection, slightly larger width than TechScrollItem */
+  width: max(calc((25svw / 100) * 80), calc((20rem / 100) * 80));
+  /* 10% of a techScrollSection */
+  left: max(calc((25svw / 100) * 10), calc((20rem / 100) * 10));
+  height: 5px;
+  content: "";
+  z-index: 2;
+}
+
+@keyframes slide {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
