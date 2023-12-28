@@ -1,9 +1,8 @@
 .aboutSection {
   display: flex;
-  flex-flow: row wrap-reverse;
-  justify-content: flex-start;
+  flex-wrap: wrap-reverse;
+  justify-content: space-evenly;
   align-items: center;
-  min-height: 90vh;
   height: fit-content;
   background: #153084;
   row-gap: 5rem;
@@ -12,7 +11,7 @@
 }
 
 .about h2 {
-  color: #008b9c;
+  color: #a0b4f0;
 }
 
 .about p {
@@ -22,33 +21,46 @@
 }
 
 i {
-  color: #008b9c;
+  color: #a0b4f0;
   display: inline;
   font-size: 1.2rem;
   line-height: 1.5rem;
 }
 
 .about {
-  margin: auto;
   padding: 1.5rem 5rem;
   width: 30rem;
+  margin: 0;
   height: 17rem;
-  border-radius: 50px;
-  background: #153084;
+  border-radius: 15px;
   box-shadow:
-    inset 18px 18px 36px #122970,
-    inset -18px -18px 36px #183798;
+    inset 5px 5px 10px #122970,
+    inset -5px -5px 10px #183798;
 }
 
 .portrait {
-  margin: auto;
-  border-radius: 150px;
   width: 20rem;
   height: 20rem;
-  background: linear-gradient(145deg, #2353e2, #1e46be);
+  padding: 1rem;
+  margin: 0;
+  border-radius: 50%;
+  background: #153084;
   box-shadow:
-    6px 6px 12px #1c42b3,
-    -6px -6px 12px #265af3;
+    5px 5px 10px #122970,
+    -5px -5px 10px #183798;
+}
+
+@media (min-width: 1920px) {
+  /* Reduce the distance between the portrait and about using flex:*/
+  .aboutSection {
+    justify-content: center;
+  }
+  .about {
+    margin: 0 5rem;
+  }
+  .portrait {
+    margin: 0 5rem;
+  }
 }
 
 @media (max-width: 700px) {

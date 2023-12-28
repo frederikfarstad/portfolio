@@ -57,11 +57,11 @@
   bottom: 40px;
   width: 60px;
   height: 60px;
-  border-radius: 150px;
-  background: linear-gradient(145deg, #16338d, #132b77);
+  border-radius: 50%;
+  background: #153084;
   box-shadow:
-    6px 6px 12px #0e1f56,
-    -6px -6px 12px #1c41b2;
+    5px 5px 10px #122970,
+    -5px -5px 10px #183798;
   border: none;
   cursor: pointer;
   transition: all 100ms ease-out;

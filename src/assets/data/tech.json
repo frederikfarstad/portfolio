@@ -1,0 +1,40 @@
+{
+  "frontend": [
+    "JavaScript",
+    "CSS",
+    "HTML",
+    "React",
+    "Typescript",
+    "Tailwind CSS",
+    "Vite",
+    "UI Design",
+    "JavaFX",
+    "Playwright",
+    "Vitest"
+  ],
+  "backend": [
+    "Java",
+    "Python",
+    "C#",
+    "Assembly",
+    "GraphQL",
+    "REST-API",
+    "MySQL",
+    "PostgreSQL",
+    "SQL",
+    "NodeJS",
+    "ExpressJS",
+    "PHP",
+    "Firebase"
+  ],
+  "tools": [
+    "Figma",
+    "Git",
+    "GitHub",
+    "GitLab",
+    "Vercel",
+    "Postman",
+    "Unity",
+    "Visual Studio Code"
+  ]
+}

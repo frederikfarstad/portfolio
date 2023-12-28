@@ -12,8 +12,8 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/projects" element={<Projects />} />
+        {/*<Route path="/resume" element={<Resume />} />*/}
+        {/*<Route path="/projects" element={<Projects />} />*/}
         <Route path="*" element={<FallbackPage />} />
       </Routes>
     </BrowserRouter>

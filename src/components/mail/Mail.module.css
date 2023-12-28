@@ -1,6 +1,132 @@
-.mailSection {
-  height: calc(100vh);
+.container {
+  height: fit-content;
   background: #4169e1;
   position: relative;
   margin: 0;
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mailWrapper {
+  border-radius: 15px;
+  width: 50svw;
+  height: fit-content;
+  background: #4169e1;
+  box-shadow:
+    5px 5px 10px #3759bf,
+    -5px -5px 10px #4b79ff;
+}
+
+.title {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  margin-bottom: 20px;
+}
+
+.name {
+  width: 80%;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 0 20px;
+  margin: 10px auto;
+  background: #4169e1;
+  box-shadow:
+    inset 5px 5px 10px #3759bf,
+    inset -5px -5px 10px #4b79ff;
+}
+
+.subject {
+  width: 80%;
+  height: 40px;
+  border-radius: 15px;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+  margin: 10px auto;
+  background: #4169e1;
+  box-shadow:
+    inset 5px 5px 10px #3759bf,
+    inset -5px -5px 10px #4b79ff;
+}
+
+.message {
+  width: 80%;
+  height: 100px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 15px 20px;
+  resize: none;
+  overflow: scroll;
+  margin: 10px auto;
+  background: #4169e1;
+  box-shadow:
+    inset 5px 5px 10px #3759bf,
+    inset -5px -5px 10px #4b79ff;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+
+.send {
+  width: calc(80% + 40px);
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  margin: 10px auto;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #4169e1;
+  box-shadow:
+    5px 5px 10px #3759bf,
+    -5px -5px 10px #4b79ff;
+  transition: all 100ms ease-out;
+}
+
+.send:hover {
+  background: #4169e1;
+  box-shadow:
+    12px 12px 15px #3759bf,
+    -12px -12px 15px #4b79ff;
+}
+
+.send:active {
+  background: #4169e1;
+  box-shadow:
+    inset 6px 6px 12px #3759bf,
+    inset -6px -6px 12px #4b79ff;
+}
+
+@media (max-width: 700px) {
+  .mailWrapper {
+    width: 80svw;
+  }
+}
+
+@media (min-width: 1920px) {
+  .mailWrapper {
+    width: 25svw;
+  }
 }

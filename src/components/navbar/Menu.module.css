@@ -52,24 +52,27 @@
   padding-top: 1.5rem;
   width: 9rem;
   height: 3rem;
-  border-radius: 150px;
-  background: linear-gradient(145deg, #2353e2, #1e46be);
+
+  border-radius: 15px;
+  background: #214ed3;
   box-shadow:
-    6px 6px 12px #1c42b3,
-    -6px -6px 12px #265af3;
+    5px 5px 10px #1c42b3,
+    -5px -5px 10px #265af3;
+
   border: none;
   cursor: pointer;
   transition: all 100ms ease-out;
 }
 
 .bmItem:hover {
+  background: #214ed3;
   box-shadow:
     12px 12px 15px #1c42b3,
     -12px -12px 15px #265af3;
 }
 
 .bmItem:active {
-  border-radius: 50px;
+  border-radius: 15px;
   background: #214ed3;
   box-shadow:
     inset 6px 6px 12px #1c42b3,
